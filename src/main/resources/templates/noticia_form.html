@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" th:href="@{/css/inicio.css}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <title>Carga de Noticias</title>
+</head>
+
+<body>
+  <nav th:replace="/fragments/nav.html::nav"></nav>
+
+  <div class="container">
+
+
+    <form class="formulario" style="font-family: fantasy;"  action="/noticia/cargar" method="POST">
+      <div class="form-group">
+        <label for="Input1" style="color: black;">titulo</label>
+        <input type="text" class="form-control" name="titulo" id="Input1" placeholder="titulo de la noticia">
+      </div>
+
+      <div class="form-group">
+        <label for="Textarea1" style="color: black;">Noticia</label>
+        <textarea class="form-control" name="cuerpo" id="Textarea1" rows="3"
+          placeholder="cuerpo de la noticia"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mt-5 ">Cargar noticia</button>
+    </form>
+    <!--       thymeleaft alertas-->
+    <div class="alert alert-danger text-center alert-dismissible fade show" th:if="${error!=null}">
+      <p th:text="${error}"></p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="alert alert-success text-center alert-dismissible fade show" th:if="${exito!=null}">
+      <p th:text="${exito}"></p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+</body>
+
+</html>

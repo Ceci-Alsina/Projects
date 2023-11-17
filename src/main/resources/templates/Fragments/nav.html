@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div style="font-family: fantasy;" class="container-fluid d-flex justify-content-between align-items-center">
+        <h1 class="m-0">Portal de Noticias</h1>
+        <ul class="nav nav-pills">
+            <li class="nav-item" style="background-color:  rgb(59, 61, 100);">
+                <a class="nav-link active" href="#" style="color: rgb(241, 241, 246);">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="color: rgb(59, 61, 100);">Noticias</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Ver Noticias</a>
+                    <a class="dropdown-item" th:href="@{/noticia/crear}">Cargar Noticias</a>
+                    <a class="dropdown-item" href="#">Panel de Administracion</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(59, 61, 100);">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</nav>

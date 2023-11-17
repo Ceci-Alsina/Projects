@@ -1,0 +1,33 @@
+body {
+    background-image: url('../img/portada1.jpg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño para cubrir el cuerpo completo */
+    background-position: center; /* Posiciona la imagen en el centro */
+    /* Otros estilos opcionales */
+    color: #ffffff; /* Color del texto para mejorar la legibilidad si es necesario */
+  }
+  header{
+    margin-top: 2cm; 
+  }
+  nav{
+    background-color:rgb(237, 233, 229);
+  }
+ 
+  h1{
+    color: rgb(59, 61, 100);
+  }
+  h2{
+    color: brown;
+    font-weight:200;
+  
+  }
+  h3{
+    color: rgb(59, 61, 100);
+  }
+ h4{
+  color:rgb(5, 5, 0);
+ }
+ 
+ #div2{
+  color: rgb(72, 143, 97) ;
+  font-size: initial;
+ }
