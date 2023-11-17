@@ -1,2 +1,2 @@
 # Projects
-Proyectos de ejercicios java/spring boot
+Proyecto noticias / ejercicios java/spring boot
